@@ -84,6 +84,41 @@ public class Tester {
        od.add(0);
        System.out.println(od.toString());
 
+       System.out.println();
+       System.out.println();
+       System.out.println();
+
+       od.clear();
+
+       for (int i = 5; i>=1; i-=2) {
+         od.add(i);
+         od.add(i);
+       }
+
+       for (int i = 6; i>=0; i--) {
+         od.add(i);
+         od.add(i);
+       }
+
+       System.out.println(od.toString());
+
+       System.out.println();
+       System.out.println();
+       System.out.println();
+
+       od.clear();
+
+       for (int i = 1; i<10; i+=2) {
+         od.add(0, i);
+         System.out.println(i);
+       }
+
+       for (int i = 7; i>=0; i--) {
+         od.add(12893429, i);
+         od.add(23392819, i);
+       }
+
+       System.out.println(od.toString());
     }
 
 }
