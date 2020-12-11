@@ -18,20 +18,19 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
       return true;
     }
 
-    //System.out.println("Hello");
+    //function index determines proper index
     int index = index(item);
-    System.out.println(index);
+
     super.add(index, item);
     return true;
   }
 
   public int index(T item) {
     int index = 0;
-    for (int i = 0; i<arr.size(); i++) {
-      T element = arr.get(i);
-      if (element.compareTo(item) > 0) {
-        index = i-1;
-        return index;
+    for (int i = 0; i<super.size(); i++) {
+      T element = super.get(i);
+      if (item.compareTo(element)==0) {
+        return i;
       }
     }
 
