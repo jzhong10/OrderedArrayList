@@ -153,6 +153,16 @@ public class Tester {
        System.out.println();
        System.out.println();
        System.out.println();
+       od.clear();
+       OrderedArrayList<String> od1 = new OrderedArrayList<String>();
+       od1.add("hello");
+       od1.add("Hello");
+       od1.add("please work");
+       od1.add("AHHHHHH");
+       od1.add("1111");
+       od1.add("1111#");
+       od1.add("#1111#");
+       System.out.println(od1.toString());
     }
 
 }
