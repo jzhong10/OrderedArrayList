@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import java.util.Arrays;
 public class Tester {
     public static void main(String[] args) {
       ArrayList<String> str = new ArrayList<String>(1);
@@ -117,8 +117,42 @@ public class Tester {
          od.add(12893429, i);
          od.add(23392819, i);
        }
-
        System.out.println(od.toString());
+
+
+       //od.add(null);
+       //od.add(2423, null);
+       System.out.println();
+       System.out.println();
+       System.out.println();
+
+       od.clear();
+
+       for (int i = 0; i<=5; i++) {
+         od.add((int) (100 * Math.random()));
+       }
+       System.out.println(od.toString());
+
+       int[] nums = new int[6];
+       for (int i = 0; i<=5; i++) {
+         nums[i] = (int) (100 * Math.random());
+       }
+
+       System.out.println();
+       System.out.println(Arrays.toString(nums));
+       System.out.println();
+
+       for (int i = 0; i<=5; i++) {
+         od.set(i, nums[i]);
+         System.out.println(od.toString());
+
+       }
+       System.out.println(od.toString());
+
+       System.out.println("String testing time");
+       System.out.println();
+       System.out.println();
+       System.out.println();
     }
 
 }
