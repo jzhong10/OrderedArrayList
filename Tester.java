@@ -20,11 +20,16 @@ public class Tester {
         System.out.println(a1.get(i));
       }
       //a1.add(3, null);
-      //System.out.println();
+      System.out.println();
       System.out.println(a1.get(3));
-      a1.set(3, 9481092);
+      a1.add(3, 9481092);
       System.out.println(a1.get(3));
 
+      System.out.println(a1.get(0));
+      a1.set(0, 9481092);
+      System.out.println(a1.get(0));
+      a1.set(0, null);
+      System.out.println(a1.get(0));
     }
 
 }
