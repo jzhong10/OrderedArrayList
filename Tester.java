@@ -28,8 +28,27 @@ public class Tester {
       System.out.println(a1.get(0));
       a1.set(0, 9481092);
       System.out.println(a1.get(0));
-      a1.set(0, null);
+      //a1.set(0, null);
       System.out.println(a1.get(0));
+
+      System.out.println();
+      System.out.println();
+      System.out.println();
+
+      OrderedArrayList<Integer> od = new OrderedArrayList<Integer>();
+
+       // for (int i = 0; i<=5; i++) {
+       //   od.add(i);
+       //   System.out.println(od.get(i));
+       // }
+
+       for (int i = 5; i>=0; i--) {
+         od.add(i);
+         //System.out.println(od.get(i));
+       }
+
+
+      System.out.println(od.toString());
     }
 
 }
