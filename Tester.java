@@ -42,13 +42,48 @@ public class Tester {
        //   System.out.println(od.get(i));
        // }
 
-       for (int i = 5; i>=0; i--) {
+       for (int i = 5; i>=1; i-=2) {
          od.add(i);
-         //System.out.println(od.get(i));
+         System.out.println(od.toString());
        }
 
+       System.out.println(od.toString());
+       System.out.println();
 
-      System.out.println(od.toString());
+       for (int i = 1; i<=5; i+=2) {
+         od.add(i);
+         System.out.println(od.toString());
+       }
+
+       od.add(4);
+       od.add(2);
+       System.out.println(od.toString());
+       od.add(7);
+       System.out.println(od.toString());
+
+       od.clear();
+       System.out.println(od.toString());
+
+       for (int i = 0; i<=10; i+=2) {
+         od.add(i);
+         od.add(i+2);
+       }
+
+       for (int i = -3; i<0; i++) {
+         od.add(i);
+       }
+
+       od.add(1);
+       od.add(17);
+       od.add(17);
+       od.add(12);
+       for (int i = 1; i<=5; i++) {
+         od.add(i);
+         od.add(i);
+       }
+       od.add(0);
+       System.out.println(od.toString());
+
     }
 
 }
