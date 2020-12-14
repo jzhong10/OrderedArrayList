@@ -12,7 +12,9 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
   }
 
   public boolean add(T item) {
-
+    if (item==null) {
+      throw new IllegalArgumentException("no Null values accepted");
+    }
     if (super.size()==0) {
       super.add(item);
       return true;
@@ -30,6 +32,9 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
   }
 
   public T set(int index, T item) {
+    if (item==null) {
+      throw new IllegalArgumentException("no Null values accepted");
+    }
     T temp = super.get(index);
     super.remove(index);
     this.add(item);
